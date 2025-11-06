@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #9B59B6;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* << CORREÇÃO: Removido ; extra */
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px; /* << CORREÇÃO: Propriedade corrigida */
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* (O seu :hover para .navbar a estava faltando, adicionei) */
+.navbar a:hover {
+    background-color: #2ECC71; /* Fundo VERDE */
+    color: #000000; /* Texto preto */
+}
+
+.navbar a.ativo {
+    background-color: #9B59B6;
+    color: #ffffff;
+}
+
+.secao-apresentacao {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    min-height: 90vh;
+    flex-wrap: wrap;
+}
+
+.secao-apresentacao img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #9B59B6;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.secao-apresentacao h1 {
+    color: #2ECC71;
+    font-size: 3em;
+    margin: 0;
+}
+
+.secao-apresentacao p {
+    color: #9B59B6;
+    font-size: 1.3em;
+    margin: 5px 0 0 0;
+}
+
+.links-sociais {
+    margin-top: 25px;
+}
+
+.btn-social {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-social.linkedin {
+    background-color: #9B59B6;
+}
+
+.btn-social.github {
+    background-color: #2ECC71;
+    color: #000000;
+}
+
+/* << CORREÇÃO: Trocado '´' por '-' e 'translate' por 'translateY' */
+.btn-social:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); 
+}
+
+.secao-conteudo {
+    padding: 50px 10%; 
+    min-height: 300px; 
+    border-top: 1px solid #333; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.secao-conteudo h2 {
+    color: #2ECC71; 
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.secao-conteudo p {
+    font-size: 1.1em;
+    color: #CCCCCC;
+}
+
+/* --- ESTILO PARA SEÇÃO HABILIDADES --- */
+.subtitulo-habilidade {
+    color: #9B59B6; 
+    font-size: 1.4em;
+    margin-top: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.lista-habilidades {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-habilidades li {
+    background-color: #1A1A1A;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/* --- ESTILO PARA SEÇÃO PROJETOS E CERTIFICAÇÕES --- */
+.lista-projetos {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-projetos li {
+    background-color: #1E1E1E;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 5px solid #2ECC71; 
+    border-radius: 0 5px 5px 0;
+}
+
+.lista-projetos strong {
+    color: #2ECC71; 
+    font-size: 1.3em;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.lista-projetos p {
+    margin: 0;
+    color: #B0B0B0; 
+}
